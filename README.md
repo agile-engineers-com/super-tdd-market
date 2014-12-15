@@ -13,6 +13,7 @@ z.B.
 
 
 Das Anzeigegerät hat eine fixe Aufteilung:
+```
 +-----------------------------------------------+
 |                                =              |
 | NAME DES ARTIKELS              = EUR 99999,99 |               
@@ -23,6 +24,7 @@ Das Anzeigegerät hat eine fixe Aufteilung:
 | ZEILE 2 (FREITEXT)                            |
 |                                               |
 +-----------------------------------------------+
+```
 
 Der Name des Artikels kann beliebig lang sein.
 Das Anzeigegerät stellt sicher, dass langer Text
@@ -45,34 +47,32 @@ Auch bei diesen 2 Zeilen gilt: das Anzeigegerät stellt sicher, dass zu
 langer Text als Laufschrift erscheint.
 
 
-Rahmenbedingungen
-===============================================================================
+## Rahmenbedingungen
 
-Barcode
+### Barcode
 Der zu scannende Artikel hat einen Barcode.
 Zum Zeitpunkt des Scannens ist dies die einzige Information, die das
 Preisauskunftsystem hat.
 
-Artikelinformationen abfragen
+### Artikelinformationen abfragen
 Mit dem Barcode kann beim unternehmensweiten Directory angefragt werden.
 Dies liefert u.a. folgende Informationen zum Artikel:
 
 * Name des Artikels (String)
 * Preis in Netto (double)
 * MwSt-Klasse (enum {0, 1, 2})
-  - 0: MwSt-befreit
-  - 1: 7%
-  - 2: 19%
+  * 0: MwSt-befreit
+  * 1: 7%
+  * 2: 19%
 
 
-Angebote und Aktionen abfragen
+### Angebote und Aktionen abfragen
 Mit Hilfe des Barcodes kann beim unternehmensweiten Campaign-Service
 angefragt werden. Dieser liefert eine, oder keine Campaign für einen
 Artikel. Ein Artikel hat nur eine/keine Campaign.
 
 
-Aufgabe
-===============================================================================
+## Aufgabe
 Entwickle das Preisabfragesystem test-driven!
 Directory, Campaign-Service und Anzeigegerät sind als Schnittstellen
 ausreichend und müssen nicht implementiert werden.
