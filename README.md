@@ -74,7 +74,7 @@ Artikel. Ein Artikel hat nur eine/keine Campaign.
 
 ## Aufgabe
 Entwickle das Preisabfragesystem test-driven!
-Directory, Campaign-Service und Anzeigegerät stehen als Interfaces bereit und können verwendet werden. Es ist nicht notwendig, diese Interface in konkrete Klassen zu implementieren.
+Directory, Campaign-Service und Anzeigegerät stehen als Interfaces bereit und können verwendet werden. Es ist nicht notwendig, diese Interfaces in konkrete Klassen zu implementieren.
 Es ist keine GUI erforderlich - Feedback über Korrektheit der Funktion sollen
 automatisierte Test geben.
 
